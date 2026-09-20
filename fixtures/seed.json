@@ -1,0 +1,7 @@
+{
+  "project": "美术馆文创权利协作",
+  "records": [
+    {"id": "exhibition-modern-2026", "kind": "exhibition", "opens_on": "2026-10-01", "closes_on": "2026-12-20", "review_group": ["学术", "设计", "经营"]},
+    {"id": "artwork-river-17", "kind": "artwork", "rights_holders": ["艺术家", "家属代理"], "allowed_uses": ["展览宣传"], "commercial_clearance": "pending"}
+  ]
+}
