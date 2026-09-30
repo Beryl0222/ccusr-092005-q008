@@ -2,6 +2,12 @@
   "project": "美术馆文创权利协作",
   "records": [
     {"id": "exhibition-modern-2026", "kind": "exhibition", "opens_on": "2026-10-01", "closes_on": "2026-12-20", "review_group": ["学术", "设计", "经营"]},
-    {"id": "artwork-river-17", "kind": "artwork", "rights_holders": ["艺术家", "家属代理"], "allowed_uses": ["展览宣传"], "commercial_clearance": "pending"}
+    {"id": "artwork-river-17", "kind": "artwork", "title": "江行图第十七开", "rights_holders": ["artist-chen", "heir-agent"], "allowed_uses": ["展览宣传"], "commercial_clearance": "pending",
+     "elements": [
+       {"element_id": "main-figure", "name": "主山体轮廓", "rights": {"reproduction": "granted", "commercial_adaptation": "pending"}},
+       {"element_id": "wave-pattern", "name": "水纹母题", "rights": {"reproduction": "pending", "commercial_adaptation": "pending"}}
+     ]},
+    {"id": "partner-a", "kind": "partner", "name": "甲文创设计", "channels": ["museum-shop", "online-mall"]},
+    {"id": "partner-b", "kind": "partner", "name": "乙文创工坊", "channels": ["museum-shop", "campus-pop-up"]}
   ]
 }
