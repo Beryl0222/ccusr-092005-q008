@@ -1,7 +1,68 @@
 {
   "project": "美术馆文创权利协作",
   "records": [
-    {"id": "exhibition-modern-2026", "kind": "exhibition", "opens_on": "2026-10-01", "closes_on": "2026-12-20", "review_group": ["学术", "设计", "经营"]},
-    {"id": "artwork-river-17", "kind": "artwork", "rights_holders": ["艺术家", "家属代理"], "allowed_uses": ["展览宣传"], "commercial_clearance": "pending"}
-  ]
+    {
+      "id": "exhibition-modern-2026",
+      "kind": "exhibition",
+      "name": "现代性特展",
+      "opens_on": "2026-10-01",
+      "closes_on": "2026-12-20",
+      "review_group": ["学术", "设计", "经营"]
+    },
+    {
+      "id": "artwork-river-17",
+      "kind": "artwork",
+      "title": "《河》系列第17号",
+      "rights_holders": ["holder-artist", "holder-family"],
+      "acquired": true,
+      "commercial_clearance": "pending",
+      "note": "入藏仅取得原件，不包含复制权与商业改编权",
+      "elements": [
+        {"id": "el-whole", "name": "完整画面", "kind": "image"},
+        {"id": "el-wave-motif", "name": "水波纹局部", "kind": "motif"},
+        {"id": "el-palette", "name": "青灰色系", "kind": "color_palette"}
+      ]
+    },
+    {
+      "id": "artwork-bloom-03",
+      "kind": "artwork",
+      "title": "《绽》第3号",
+      "rights_holders": ["holder-artist"],
+      "acquired": true,
+      "commercial_clearance": "pending",
+      "elements": [
+        {"id": "el-whole", "name": "完整画面", "kind": "image"}
+      ]
+    },
+    {
+      "id": "holder-artist",
+      "kind": "rights_holder",
+      "name": "艺术家林某"
+    },
+    {
+      "id": "holder-family",
+      "kind": "rights_holder",
+      "name": "家属代理"
+    },
+    {
+      "id": "partner-A",
+      "kind": "partner",
+      "name": "甲文创公司",
+      "stages": ["creative", "distribution"]
+    },
+    {
+      "id": "partner-B",
+      "kind": "partner",
+      "name": "乙制造公司",
+      "stages": ["creative", "production"]
+    }
+  ],
+  "approval_gates": [
+    {"gate": "academic", "owner_role": "academic_reviewer", "label": "学术审核"},
+    {"gate": "rights", "owner_role": "rights_officer", "label": "权利确认"},
+    {"gate": "public_benefit", "owner_role": "public_benefit_officer", "label": "公益属性判断"},
+    {"gate": "business", "owner_role": "business_reviewer", "label": "经营审批"}
+  ],
+  "license_axes": ["quantity", "region", "channel", "term"],
+  "instance_states": ["unproduced", "in_transit", "sold", "exhibition_promo"]
 }
